@@ -35,3 +35,34 @@ h2 {
 	font-family: "Fredoka One";
 	color: #EEE8AA;
 }
+
+.input {
+	width: 275px;
+	height: 75px;
+	margin: 10px auto;
+	display: block inline;
+	font-size: 16px;
+	text-align: center;
+}
+
+#message1, #message2 {
+	color: white;
+	font-family: "Fredoka One"
+}
+
+#status {
+	font-size: 35px;
+	font-family: "Fredoka One"
+}
+
+body.winning {
+	background: url(images/winning.gif) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#status.guesses {
+	color: red;
+}
