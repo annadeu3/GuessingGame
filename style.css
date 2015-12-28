@@ -58,7 +58,7 @@ h2 {
 
 body.winning {
 	background: url(images/winning.gif) no-repeat center center fixed; 
-  	background-color: grey;
+  	background-color: pink;
 }
 
 #status.guesses {
