@@ -63,12 +63,15 @@ $(document).ready(function() {
 
 		if (userGuess === winningNumber) {
 			$('#status').text("Congrats, Pal! You guessed the correct number!");
-			$('#status').css("color", "purple");
+			$('#status').css("color", "orange");
+			$("#win").css("display", "block")
 			$(".input").hide();
 			$("#message1").hide();
 			$("#message2").hide();
 			$("body").addClass("winning");
 			$("#start").hide();
+			$(".lead").hide();
+			$(".rules").hide();
 		} else if (guessesLeft > 0) {
 			if (guessesLeft === 1) {
 				$("#status").text("You're down to ONE last guess");
@@ -81,13 +84,16 @@ $(document).ready(function() {
 			}
 		} else {
 			$('#status').text("YOU LOST! Click Play Again!");
-			$("body").css("background-color", "orange");
+			$("body").addClass("loser");
 			$(".input").hide();
 			$("#message1").hide();
 			$("#message2").hide();
 			$("#start").hide();
 			$("#submit").hide();
 			$("#hint").hide();
+			$(".lead").hide();
+			$(".rules").hide();
+			$("#lost").css("display", "block");
 		}
 	}
 
