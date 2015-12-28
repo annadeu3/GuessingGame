@@ -57,10 +57,20 @@ h2 {
 }
 
 body.winning {
-	background: url(images/winning.gif) no-repeat center center fixed; 
-  	background-color: pink;
+	background: url(images/image.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+body.loser {
+	background: url(images/image.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 #status.guesses {
 	color: red;
+}
+
+#win, #lost {
+	display: none;
+	margin: auto;
 }
