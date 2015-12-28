@@ -1,5 +1,6 @@
 body {
-    background-color: #6699FF;
+    background: url(images/image.jpg) no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
 }
 
@@ -46,7 +47,7 @@ h2 {
 }
 
 #message1, #message2 {
-	color: white;
+	color: orange;
 	font-family: "Fredoka One"
 }
 
@@ -57,10 +58,7 @@ h2 {
 
 body.winning {
 	background: url(images/winning.gif) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+  	background-color: grey;
 }
 
 #status.guesses {
