@@ -1,19 +1,10 @@
 /* **** Global Variables **** */
 // try to elminate these global variables in your project, these are here just to start.
 $(document).ready(function() {
-	var userGuess;
-	var guesses;
-	var winningNumber;
-	var maxGuess;
-
-	function init() {
-		userGuess = 0;
-		guesses = [];
-		winningNumber = generateWinningNumber();
-		maxGuess = 5;
-	}
-
-	init();
+	var userGuess = 0;
+	var guesses = [];
+	var winningNumber = generateWinningNumber();
+	var maxGuess = 5;
 
 
 /* **** Guessing Game Functions **** */
@@ -95,6 +86,8 @@ $(document).ready(function() {
 			$("#message1").hide();
 			$("#message2").hide();
 			$("#start").hide();
+			$("#submit").hide();
+			$("#hint").hide();
 		}
 	}
 
